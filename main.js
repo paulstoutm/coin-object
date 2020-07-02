@@ -40,11 +40,11 @@ function display20Flips() {
 display20Flips()
 
 function display20Images() {
-    let imgElement = document.querySelector('body')
+    let bodyElement = document.querySelector('body')
     for (let i = 0; i < 20; i = i + 1) {
         coin.flip()
         coin.toHTML()
-        imgElement.append(coin.toHTML())
+        bodyElement.append(coin.toHTML())
     }
 }
 display20Images()
